@@ -25,12 +25,12 @@ From this function we can check if a connection has been established, and if so,
 
 ```C
 if (backdoor_connected) {
-        /* backdoor established, check and execute instructions */
-        backdoor_execute();
-    } else {
-        /* backdoor not established, search for client and update connected bool */
-        backdoor_connected = backdoor_init();
-    }
+    /* backdoor established, check and execute instructions */
+    backdoor_execute();
+} else {
+    /* backdoor not established, search for client and update connected bool */
+    backdoor_connected = backdoor_init();
+}
 ```
 
 ## Installation
